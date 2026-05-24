@@ -7,35 +7,37 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#f5f5f5;
+background:#f4f6fb;
 color:#222;
-line-height:1.6;
 }
 
 .hero{
 height:100vh;
-background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop') center/cover;
+background:url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1600&auto=format&fit=crop') center/cover;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 }
 
 .overlay{
-background:rgba(0,0,0,0.55);
+background:rgba(0,0,0,0.65);
 padding:40px;
-border-radius:20px;
-color:white;
+border-radius:25px;
+max-width:700px;
 }
 
 .hero h1{
-font-size:52px;
+font-size:55px;
+color:white;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:22px;
-margin-bottom:25px;
+font-size:24px;
+color:#fff;
+margin-bottom:30px;
 }
 
 .btn{
@@ -44,7 +46,7 @@ padding:14px 28px;
 background:#ff9800;
 color:white;
 text-decoration:none;
-border-radius:10px;
+border-radius:12px;
 margin:8px;
 font-weight:bold;
 }
@@ -54,13 +56,13 @@ background:#25D366;
 }
 
 section{
-padding:60px 20px;
+padding:70px 20px;
 }
 
 h2{
 text-align:center;
+font-size:42px;
 margin-bottom:40px;
-font-size:38px;
 color:#0d47a1;
 }
 
@@ -72,24 +74,26 @@ gap:25px;
 }
 
 .card,
-.package-card{
+.package-card,
+.gallery-card{
 background:white;
 padding:20px;
-border-radius:18px;
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
+border-radius:20px;
+box-shadow:0 6px 18px rgba(0,0,0,0.12);
 text-align:center;
 }
 
 .card img,
-.gallery-grid img{
+.gallery-card img{
 width:100%;
-border-radius:15px;
-height:220px;
+height:230px;
 object-fit:cover;
+border-radius:16px;
 }
 
 .card h3{
 margin-top:15px;
+margin-bottom:8px;
 }
 
 .package-card{
@@ -99,14 +103,23 @@ margin-bottom:25px;
 .package-card span{
 display:block;
 margin-top:15px;
-font-size:28px;
+font-size:32px;
 font-weight:bold;
 color:#e91e63;
 }
 
-.extra{
-text-align:center;
-margin-top:30px;
+.extra-box{
+margin-top:18px;
+padding:12px;
+background:#eef4ff;
+border-radius:12px;
+font-size:15px;
+font-weight:bold;
+line-height:1.7;
+}
+
+.gallery-card p{
+margin-top:12px;
 font-weight:bold;
 }
 
@@ -114,6 +127,11 @@ font-weight:bold;
 background:#0d47a1;
 color:white;
 text-align:center;
+}
+
+.contact p{
+margin:12px 0;
+font-size:18px;
 }
 
 footer{
@@ -124,6 +142,7 @@ padding:20px;
 }
 
 @media(max-width:768px){
+
 .hero h1{
 font-size:38px;
 }
@@ -131,4 +150,9 @@ font-size:38px;
 .hero p{
 font-size:18px;
 }
+
+h2{
+font-size:32px;
+}
+
 }
