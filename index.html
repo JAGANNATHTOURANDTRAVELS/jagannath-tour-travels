@@ -4,81 +4,125 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jagannath Tour & Travels</title>
-<style>
-body{margin:0;font-family:Arial;background:#f5f7ff;color:#111}
-header{background:#003399;color:#fff;padding:15px;text-align:center}
-.hero{background:url('https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?q=80&w=1400&auto=format&fit=crop') center/cover;height:500px;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}
-.hero h1{font-size:60px;background:rgba(0,0,0,0.5);padding:20px;border-radius:20px}
-.section{padding:40px 20px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
-.card img{width:100%;height:220px;object-fit:cover}
-.card h3{text-align:center;padding:15px;color:#003399}
-footer{background:#001a66;color:#fff;text-align:center;padding:20px}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>Jagannath Tour & Travels</h1>
-<p>Safe Journey • Happy Journey</p>
+
+<header class="topbar">
+  <div class="logo">Jagannath Tour & Travels</div>
+  <div class="phone">📞 8249094995</div>
 </header>
 
 <section class="hero">
-<h1>Welcome To Odisha Tourism</h1>
+  <div class="overlay">
+    <h1>Jagannath Tour & Travels</h1>
+    <p>Safe • Comfortable • Memorable Journey</p>
+
+    <div class="buttons">
+      <a href="tel:8249094995">📞 Call Now</a>
+      <a href="https://wa.me/918249094995">💬 WhatsApp</a>
+    </div>
+  </div>
 </section>
 
-<section class="section">
-<h2 style="text-align:center;color:#003399">Our Premium Cars</h2>
+<section class="packages">
+<h2>Our Tour Packages</h2>
+
 <div class="cards">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1200&auto=format&fit=crop">
-<h3>Swift Dzire</h3>
+
+<div class="card blue">
+<h3>Local Running</h3>
+<p>Sadan Car</p>
+<p>8 Hour | 80 Km</p>
+<h1>₹2000</h1>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop">
+<div class="card orange">
+<h3>Puri Konark Round Trip</h3>
+<p>Sadan Car</p>
+<h1>₹3500</h1>
+</div>
+
+<div class="card pink">
+<h3>Only Puri Round Trip</h3>
+<p>Sadan Car</p>
+<h1>₹2500</h1>
+</div>
+
+<div class="card green">
+<h3>Outstation Ride</h3>
+<p>Above 250 Km/Day</p>
+<p>(10 Hour)</p>
+<h1>₹1200</h1>
+<p>1 Litre Fuel Cost Per 12 Km</p>
+</div>
+
+</div>
+
+<p class="extra">Toll Tax, State Tax, Parking Fees Extra</p>
+
+</section>
+
+<section class="cars">
+<h2>Our Cars</h2>
+
+<div class="car-grid">
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop" alt="Ertiga">
 <h3>Maruti Suzuki Ertiga</h3>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop">
-<h3>Toyota Innova</h3>
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop" alt="Swift Dzire">
+<h3>Swift Dzire</h3>
 </div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop" alt="Innova">
+<h3>Toyota Innova Crysta</h3>
+</div>
+
 </div>
 </section>
 
-<section class="section">
-<h2 style="text-align:center;color:#003399">Tour Packages</h2>
-<div class="cards">
-<div class="card"><h3>Local Running ₹2000</h3></div>
-<div class="card"><h3>Puri Konark Round Trip ₹3500</h3></div>
-<div class="card"><h3>Only Puri Round Trip ₹2500</h3></div>
-<div class="card"><h3>Outstation Ride ₹1200<br>Fuel Cost 1 Litre Per 12 KM</h3></div>
+<section class="places">
+<h2>Popular Tourist Places in Odisha</h2>
+
+<div class="place-grid">
+
+<div class="place">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Jagannath_Temple%2C_Puri.jpg">
+<p>Jagannath Temple</p>
+</div>
+
+<div class="place">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Konark_Sun_Temple.jpg">
+<p>Konark Sun Temple</p>
+</div>
+
+<div class="place">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Chilika_Lake.jpg">
+<p>Chilika Lake</p>
+</div>
+
+<div class="place">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Lingaraj_temple_Bhubaneswar.jpg">
+<p>Lingaraj Temple</p>
+</div>
+
 </div>
 </section>
 
-<section class="section">
-<h2 style="text-align:center;color:#003399">Explore Odisha</h2>
-<div class="cards">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581852057108-68b98c3d2d6b?q=80&w=1200&auto=format&fit=crop">
-<h3>Jagannath Temple</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1599661046827-dacde6976548?q=80&w=1200&auto=format&fit=crop">
-<h3>Konark Sun Temple</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?q=80&w=1200&auto=format&fit=crop">
-<h3>Chilika Lake</h3>
-</div>
-</div>
+<section class="contact">
+<h2>Contact Us</h2>
+<p>📞 8249094995</p>
+<p>📧 od33q5709@gmail.com</p>
+<p>📍 Rasulgad, Odisha</p>
 </section>
 
 <footer>
-📞 8249094995 | 📧 od33q5709@gmail.com | Rasulgarh, Odisha
+© 2026 Jagannath Tour & Travels
 </footer>
 
 </body>

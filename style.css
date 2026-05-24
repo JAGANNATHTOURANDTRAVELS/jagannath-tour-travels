@@ -1,158 +1,110 @@
-
-*{
+body{
 margin:0;
-padding:0;
-box-sizing:border-box;
 font-family:Arial,sans-serif;
+background:#f3f3f3;
+color:#111;
 }
 
-body{
-background:#f4f6fb;
-color:#222;
+.topbar{
+background:#1a0080;
+color:white;
+display:flex;
+justify-content:space-between;
+padding:15px 20px;
+font-weight:bold;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .hero{
-height:100vh;
-background:url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1600&auto=format&fit=crop') center/cover;
+background:url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Jagannath_Temple%2C_Puri.jpg') center/cover;
+height:500px;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
-padding:20px;
 }
 
 .overlay{
-background:rgba(0,0,0,0.65);
-padding:40px;
-border-radius:25px;
-max-width:700px;
-}
-
-.hero h1{
-font-size:55px;
+background:rgba(0,0,0,0.55);
+padding:30px;
+border-radius:20px;
 color:white;
-margin-bottom:20px;
 }
 
-.hero p{
-font-size:24px;
-color:#fff;
-margin-bottom:30px;
+.overlay h1{
+font-size:55px;
+margin:0;
 }
 
-.btn{
+.overlay p{
+font-size:22px;
+}
+
+.buttons a{
 display:inline-block;
-padding:14px 28px;
-background:#ff9800;
+background:#ff008c;
+padding:12px 25px;
+margin:10px;
+border-radius:30px;
 color:white;
 text-decoration:none;
-border-radius:12px;
-margin:8px;
 font-weight:bold;
 }
 
-.whatsapp{
-background:#25D366;
-}
-
-section{
-padding:70px 20px;
-}
-
-h2{
+.packages,.cars,.places,.contact{
+padding:50px 20px;
 text-align:center;
-font-size:42px;
-margin-bottom:40px;
-color:#0d47a1;
 }
 
-.car-grid,
-.gallery-grid{
+.cards,.car-grid,.place-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
 }
 
-.card,
-.package-card,
-.gallery-card{
-background:white;
-padding:20px;
+.card{
+padding:25px;
 border-radius:20px;
-box-shadow:0 6px 18px rgba(0,0,0,0.12);
-text-align:center;
+color:white;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-.card img,
-.gallery-card img{
+.blue{background:#0066ff;}
+.orange{background:#ff6600;}
+.pink{background:#ff008c;}
+.green{background:#00a651;}
+
+.car-card,.place{
+background:white;
+padding:15px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.car-card img,.place img{
 width:100%;
-height:230px;
+height:220px;
 object-fit:cover;
-border-radius:16px;
+border-radius:15px;
 }
 
-.card h3{
-margin-top:15px;
-margin-bottom:8px;
-}
-
-.package-card{
-margin-bottom:25px;
-}
-
-.package-card span{
-display:block;
-margin-top:15px;
-font-size:32px;
-font-weight:bold;
-color:#e91e63;
-}
-
-.extra-box{
-margin-top:18px;
-padding:12px;
-background:#eef4ff;
-border-radius:12px;
-font-size:15px;
-font-weight:bold;
-line-height:1.7;
-}
-
-.gallery-card p{
-margin-top:12px;
+.extra{
+margin-top:20px;
 font-weight:bold;
 }
 
 .contact{
-background:#0d47a1;
+background:#1a0080;
 color:white;
-text-align:center;
-}
-
-.contact p{
-margin:12px 0;
-font-size:18px;
 }
 
 footer{
-background:#111;
+background:black;
 color:white;
 text-align:center;
-padding:20px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:38px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-h2{
-font-size:32px;
-}
-
+padding:15px;
 }
